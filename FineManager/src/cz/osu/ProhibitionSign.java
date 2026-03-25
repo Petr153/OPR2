@@ -1,6 +1,6 @@
 package cz.osu;
 
-public class ProhibitionSign extends TrafficSign {
+public class ProhibitionSign implements TrafficSign {
     private ActionType prohibitedAction;
 
     public ProhibitionSign(ActionType prohibitedAction) {
