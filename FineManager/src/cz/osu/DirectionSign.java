@@ -1,6 +1,6 @@
 package cz.osu;
 
-public class DirectionSign extends TrafficSign {
+public class DirectionSign implements TrafficSign {
     private ActionType allowedDirection;
 
     public DirectionSign(ActionType allowedDirection) {
