@@ -1,5 +1,5 @@
 package cz.osu;
 
-public abstract class TrafficSign {
-    public abstract boolean isViolating(Car car);
+public interface TrafficSign {
+    boolean isViolating(Car car);
 }
