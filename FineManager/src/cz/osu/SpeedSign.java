@@ -1,6 +1,6 @@
 package cz.osu;
 
-public class SpeedSign extends TrafficSign {
+public class SpeedSign implements TrafficSign {
     private int speedLimit;
 
     public SpeedSign(int speedLimit) {
