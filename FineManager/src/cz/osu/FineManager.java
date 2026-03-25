@@ -8,7 +8,7 @@ public class FineManager {
 
         for (TrafficSign sign : location.getSigns()) {
             if (sign.isViolating(car)) {
-                fines.add(new Fine(car, sign, 2000));
+                fines.add(new Fine(car, sign.getDescription(), 2000));
             }
         }
         return fines;

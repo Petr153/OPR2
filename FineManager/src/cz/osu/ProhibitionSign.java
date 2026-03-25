@@ -17,4 +17,16 @@ public class ProhibitionSign implements TrafficSign {
     public boolean isViolating(Car car) {
         return car.getAction().equals(prohibitedAction);
     }
+
+    @Override
+    public String getDescription() {
+        return toString();
+    }
+
+    @Override
+    public String toString() {
+        return "ProhibitionSign{" +
+                "prohibitedAction=" + prohibitedAction +
+                '}';
+    }
 }

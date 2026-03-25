@@ -2,12 +2,12 @@ package cz.osu;
 
 public class Fine {
     private Car car;
-    private TrafficSign violatedSign;
+    private String reason;
     private int amount;
 
-    public Fine(Car car, TrafficSign violatedSign, int amount) {
+    public Fine(Car car, String reason, int amount) {
         this.car = car;
-        this.violatedSign = violatedSign;
+        this.reason = reason;
         this.amount = amount;
     }
 
@@ -19,12 +19,12 @@ public class Fine {
         this.car = car;
     }
 
-    public TrafficSign getViolatedSign() {
-        return violatedSign;
+    public String getReason() {
+        return reason;
     }
 
-    public void setViolatedSign(TrafficSign violatedSign) {
-        this.violatedSign = violatedSign;
+    public void setReason(String reason) {
+        this.reason = reason;
     }
 
     public int getAmount() {
@@ -34,5 +34,4 @@ public class Fine {
     public void setAmount(int amount) {
         this.amount = amount;
     }
-
 }

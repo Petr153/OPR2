@@ -19,4 +19,16 @@ public class SpeedSign implements TrafficSign {
     public boolean isViolating(Car car) {
         return car.getSpeed() > speedLimit;
     }
+
+    @Override
+    public String getDescription() {
+        return toString();
+    }
+
+    @Override
+    public String toString() {
+        return "SpeedSign{" +
+                "speedLimit=" + speedLimit +
+                '}';
+    }
 }
