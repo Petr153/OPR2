@@ -18,6 +18,6 @@ public class DirectionSign extends TrafficSign {
 
     @Override
     public boolean isViolating(Car car) {
-        return car.getAction().equals(allowedDirection);
+        return !car.getAction().equals(allowedDirection);
     }
 }
