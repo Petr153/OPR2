@@ -1,0 +1,2 @@
+Datum;Zakaznik;Položky objednávky
+2026-05-31;Customer{name='jan', email='jan@neco.com'};[Item{productName='neco', amount=1, price=10.0}]
